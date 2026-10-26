@@ -8,7 +8,7 @@ env:
   - key: ADMIN_PASSWORD
     value: ChangeMe!2026Strong
   - key: SPRING_DATASOURCE_URL
-    value: "postgresql://neondb_owner:npg_l1M3XQBRfAYV@ep-steep-night-b5kjzmed-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+    value: "postgresql://neondb_owner:«redacted 16 chars»@ep-steep-night-b5kjzmed-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
   - key: SPRING_DATASOURCE_USERNAME
     value: neondb_owner
   - key: SPRING_DATASOURCE_PASSWORD
