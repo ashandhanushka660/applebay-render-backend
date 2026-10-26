@@ -1,0 +1,20 @@
+service_id: applebay-render-backend
+type: web
+runtime: docker
+dockerfile: Dockerfile
+env:
+  - key: JWT_SECRET
+    value: change-me-to-a-32-plus-byte-random-secret
+  - key: ADMIN_PASSWORD
+    value: ChangeMe!2026Strong
+  - key: SPRING_DATASOURCE_URL
+    value: postgres://neon_user:neon_password@db.fp.golobal.prod.neon.tech/neondb?sslmode=require
+  - key: SPRING_DATASOURCE_USERNAME
+    value: neondb_owner
+  - key: SPRING_DATASOURCE_PASSWORD
+    value: neondb_password
+  - key: FRONTEND_URL
+    value: https://applebay-netlify-frontend.vercel.app
+buildCommand: Dockerfile
+startCommand: sh -c "java $JAVA_OPTS -jar app.jar"
+port: 8080
