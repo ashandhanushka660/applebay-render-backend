@@ -8,11 +8,11 @@ env:
   - key: ADMIN_PASSWORD
     value: ChangeMe!2026Strong
   - key: SPRING_DATASOURCE_URL
-    value: postgres://neon_user:neon_password@db.fp.golobal.prod.neon.tech/neondb?sslmode=require
+    value: "postgresql://neondb_owner:npg_l1M3XQBRfAYV@ep-steep-night-b5kjzmed-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
   - key: SPRING_DATASOURCE_USERNAME
     value: neondb_owner
   - key: SPRING_DATASOURCE_PASSWORD
-    value: neondb_password
+    value: npg_l1M3XQBRfAYV
   - key: FRONTEND_URL
     value: https://applebay-netlify-frontend.vercel.app
 buildCommand: Dockerfile
